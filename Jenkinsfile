@@ -8,12 +8,6 @@ pipeline {
                 npm install
             }
         }
-        stage('Serving') {
-            steps {
-                echo 'Serving..'
-                npm run serve
-            }
-        }
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
