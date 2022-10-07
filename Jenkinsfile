@@ -11,7 +11,7 @@ pipeline {
         stage('Serving') {
             steps {
                 echo 'Serving..'
-                npm run server
+                npm run serve
             }
         }
         stage('Deploy') {
