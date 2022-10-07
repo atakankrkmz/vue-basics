@@ -4,7 +4,14 @@ pipeline {
     stages {
         stage('Install Dependencies') {
             steps {
-                echo 'test' 
+                echo 'Installing..'
+                sh 'npm install'
+            }
+        }
+        stage('Serving') {
+            steps {
+                echo 'Serving..'
+                sh 'npm run serve'
             }
         }
         stage('Deploy') {
