@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Install Dependencies') {
             steps {
-                npm install
+                echo 'test' 
             }
         }
         stage('Deploy') {
